@@ -1,8 +1,8 @@
-import EducationComponent from "../components/educationComponents/educationComponent";
+import Education from "../components/Education/Education";
 
-export default function Education(){
+export default function EducationPage(){
 
     return(
-        <EducationComponent></EducationComponent>
+        <Education></Education>
     );
 }

@@ -2,7 +2,7 @@
 import { Box, VStack } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { FaEnvelope } from "react-icons/fa";
-import GiveContact from "../components/ContactForm/GiveContact";
+import Contact from "../components/Contact/Contact";
 import HeroSection from "../components/appComponents/HeroSection";
 
 export default function ContactForm() {
@@ -28,7 +28,7 @@ export default function ContactForm() {
       />
 
       <VStack p={6} pb={20}>
-        <GiveContact
+        <Contact
           register={register}
           handleSubmit={handleSubmit}
           errors={errors}

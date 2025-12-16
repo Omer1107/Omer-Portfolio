@@ -1,8 +1,8 @@
-import ExperiencePage from "../components/experienceComponent/experiencePage";
+import Experience from "../components/Experience/Experience";
 
-export default function Experience(){
+export default function ExperiencePage(){
 
     return(
-        <ExperiencePage></ExperiencePage>
+        <Experience></Experience>
     );
 }

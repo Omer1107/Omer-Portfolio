@@ -76,7 +76,7 @@ export default function Projects() {
             
             />
             
-            <Container maxW="container.xl" px={{ base: 4, md: 8 }} pb={20}>
+            <Container maxW="container.xl" px={{ base: 4, md: 8 }} pb={20} mt={20}>
                 {projects.length === 0 ? (
                     <VStack spacing={6} py={20} textAlign="center">
                         <Text fontSize="xl" color="gray.400">
@@ -109,7 +109,7 @@ function ProjectCard({ project }) {
             borderColor="gray.700"
             transition="all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)"
             _hover={{
-                transform: "translateY(-12px)",
+                transform: "scale(1.01)",
                 boxShadow: "2xl",
                 borderColor: "blue.400",
             }}
@@ -148,7 +148,7 @@ function ProjectCard({ project }) {
 
             <Box p={{ base: 6, md: 8 }} flex="1" display="flex" flexDirection="column">
                 <VStack align="start" spacing={4} mb={6} flex="1">
-                    <Heading as="h3" size="lg" color="gray.100" fontWeight="bold" lineHeight="1.2">
+                    <Heading as="h3" size="lg" color="#00F0FF" fontWeight="bold" lineHeight="1.2">
                         {project?.heading}
                     </Heading>
                     <Text color="gray.400" lineHeight="1.7" fontSize="md">
@@ -156,12 +156,12 @@ function ProjectCard({ project }) {
                     </Text>
                 </VStack>
 
-                <Box wrap="wrap" gap={3} mb={8} display="flex">
-                    {project?.tags?.slice(0, 4).map((tag, index) => (
+                <Box display="flex" flexWrap="wrap" gap={3} mb={8}>
+                    {project?.tags?.map((tag, index) => (
                         <Badge
                             key={index}
-                            px={4}
-                            py={2}
+                            px={3}
+                            py={1}
                             borderRadius="full"
                             bg="blue.900"
                             color="blue.300"
@@ -175,22 +175,14 @@ function ProjectCard({ project }) {
                             {tag}
                         </Badge>
                     ))}
-                    {project?.tags?.length > 4 && (
-                        <Badge px={4} py={2} borderRadius="full" bg="gray.700" color="gray.400" fontSize="xs">
-                            +{project.tags.length - 4} more
-                        </Badge>
-                    )}
+                   
                 </Box>
 
                 <HStack mt="auto" pt={4} borderTop="1px" borderColor="gray.700" spacing={3}>
-                    <Link href={project?.link} target="_blank" _hover={{ textDecoration: "none" }} flex="1">
-                        <Button leftIcon={<FaExternalLinkAlt />} bg="blue.500" color="white" size="md" width="100%" _hover={{ bg: "blue.600", transform: "translateY(-2px)", boxShadow: "lg" }} transition="all 0.3s">
-                            Live Demo
-                        </Button>
-                    </Link>
+                    
                     <Link href={project?.github || project?.link} target="_blank" _hover={{ textDecoration: "none" }} flex="1">
-                        <Button variant="outline" leftIcon={<FaGithub />} size="md" width="100%" color="gray.100" borderColor="gray.700" _hover={{ bg: "gray.700", transform: "translateY(-2px)", borderColor: "blue.400", color: "blue.400" }} transition="all 0.3s">
-                            Source
+                        <Button variant="outline" leftIcon={<FaGithub />} size="md" width="100%" color="#00F0FF" borderColor="gray.700" _hover={{ bg: "gray.700", transform: "translateY(-2px)", borderColor: "blue.400", color: "blue.400" }} transition="all 0.3s">
+                            Source Code
                         </Button>
                     </Link>
                 </HStack>

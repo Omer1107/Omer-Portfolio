@@ -5,14 +5,17 @@ import { Box, Container, Heading, Text, VStack } from "@chakra-ui/react";
 export default function HeroSection({ title, subtitle }) {
   return (
     <Box
-      bg="gray.900"
       bgGradient="linear(135deg, gray.900 0%, blue.900 50%, purple.900 100%)"
       position="relative"
       overflow="hidden"
       py={{ base: 20, md: 32 }}
-      mb={0}
       borderBottom="1px solid"
       borderColor="gray.800"
+      style={{
+        WebkitMaskImage:
+          "linear-gradient(to bottom, black 70%, transparent 100%)",
+        maskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
+      }}
     >
       {/* Animated background shapes */}
       <Box
@@ -27,7 +30,7 @@ export default function HeroSection({ title, subtitle }) {
         filter="blur(80px)"
         animation="float 8s ease-in-out infinite"
       />
-      
+
       <Box
         position="absolute"
         bottom="-20%"
@@ -53,25 +56,13 @@ export default function HeroSection({ title, subtitle }) {
         bgSize="100px 100px"
       />
 
-      <Container maxW="container.xl" px={{ base: 4, md: 8 }} position="relative" zIndex={1}>
+      <Container
+        maxW="container.xl"
+        px={{ base: 4, md: 8 }}
+        position="relative"
+        zIndex={1}
+      >
         <VStack spacing={8} textAlign="center">
-          {/* Icon with glow effect */}
-{/*           {Icon && (
-            <Box
-              bg="whiteAlpha.100"
-              p={8}
-              borderRadius="3xl"
-              backdropFilter="blur(20px)"
-              boxShadow="0 10px 40px rgba(59, 130, 246, 0.3)"
-              border="2px solid"
-              borderColor="whiteAlpha.200"
-              transition="all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)"
-              animation="pulse 3s ease-in-out infinite"
-            >
-              <Icon size={60} color="white" />
-            </Box>
-          )} */}
-
           {/* Title with gradient text */}
           <VStack spacing={4} mt={10}>
             <Heading
@@ -133,7 +124,9 @@ export default function HeroSection({ title, subtitle }) {
                 opacity={0.3}
                 top={`${Math.random() * 100}%`}
                 left={`${Math.random() * 100}%`}
-                animation={`float ${5 + Math.random() * 5}s ease-in-out ${Math.random() * 2}s infinite`}
+                animation={`float ${5 + Math.random() * 5}s ease-in-out ${
+                  Math.random() * 2
+                }s infinite`}
               />
             ))}
           </Box>

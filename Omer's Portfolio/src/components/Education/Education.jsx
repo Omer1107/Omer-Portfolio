@@ -7,7 +7,7 @@ import { PiMedalLight } from "react-icons/pi";
 import { useEffect, useState } from "react";
 import HeroSection from "../appComponents/HeroSection";
 
-export default function EducationComponent() {
+export default function Education() {
     const [information, setInformation] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState();
@@ -60,8 +60,8 @@ export default function EducationComponent() {
                 subtitle="My academic journey and achievements"
             />
             
-            <Container maxW="container.xl" px={{ base: 4, md: 8 }} pb={20}>
-                <VStack spacing={8} align="stretch">
+            <Container maxW="container.xl" px={{ base: 4, md: 8 }} pb={20} mt={20}>
+                <VStack spacing={8} gap={8} align="stretch">
                     {map(information, (info, index) => (
                         <Box
                             key={info?.id || index}
@@ -75,7 +75,7 @@ export default function EducationComponent() {
                             border="1px"
                             borderColor="gray.700"
                             _hover={{
-                                transform: "translateY(-5px)",
+                                transform: "scale(1.01)",
                                 boxShadow: "2xl",
                                 borderColor: "blue.600",
                             }}
@@ -92,7 +92,7 @@ export default function EducationComponent() {
                             }}
                         >
                             <Flex align="center" justify="space-between" mb={4} flexWrap="wrap" gap={4}>
-                                <Heading as="h3" size="lg" color="blue.400" fontWeight="bold">
+                                <Heading as="h3" size="lg" color="#00F0FF" fontWeight="bold">
                                     {info?.heading}
                                 </Heading>
                                 <Badge
