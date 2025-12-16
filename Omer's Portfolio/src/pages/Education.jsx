@@ -1,4 +1,4 @@
-import Education from "../components/Education/Education";
+import Education from "../components/Education/Education.jsx";
 
 export default function EducationPage(){
 

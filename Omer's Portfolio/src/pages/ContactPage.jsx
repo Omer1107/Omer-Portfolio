@@ -2,7 +2,7 @@
 import { Box, VStack } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { FaEnvelope } from "react-icons/fa";
-import Contact from "../components/Contact/Contact";
+import Contact from "../components/Contact/Contact.jsx";
 import HeroSection from "../components/appComponents/HeroSection";
 
 export default function ContactForm() {
