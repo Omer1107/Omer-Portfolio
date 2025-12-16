@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/appComponents/Header";
 import SocialSidebar from "./components/appComponents/SocialSidebar";
-import Home from "./components/Home/home";
+import HomePage from "./pages/Home";
 import EducationPage from "./pages/Education";
 import Footer from "./components/appComponents/Footer";
 import ExperiencePage from "./pages/Experience";
@@ -18,7 +18,7 @@ function App() {
       <Toaster />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectPage />} />
           <Route path="/education" element={<EducationPage />} />
           <Route path="/experience" element={<ExperiencePage />} />

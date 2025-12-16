@@ -43,7 +43,7 @@ const skills = [
   { name: "Data Science", icon: SiPandas, color: "purple.400" },
 ];
 
-export default function HomePage() {
+export default function Home() {
   return (
     <Box bg="gray.900" minH="100vh" position="relative" overflow="hidden">
       {/* Subtle gradient overlay */}
