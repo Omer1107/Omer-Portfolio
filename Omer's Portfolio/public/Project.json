@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "heading": "Book Notes Archive App",
+    "description": "A full-stack web app where users can log in, search books via the Google Books API, write personal notes, rate books, and store all data securely in a MySQL database.",
+    "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "tags": ["Node.js", "Express", "EJS", "MySQL", "Google Books API", "Authentication"],
+    "github": "https://github.com/Omer1107/Books-Archive",
+    "category": "Full Stack"
+  },
+  
+  {
+    "id": 2,
+    "heading": "Portfolio Website",
+    "description": "Modern, responsive portfolio website with project showcase, and contact management system.",
+    "image": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "tags": ["React", "Chakra UI", "Vite", "JavaScript", "Responsive"],
+    "github": "https://github.com/HamzaGohar-2k23-BSCS-249",
+    "category": "Frontend"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "heading": "Software Developer Intern",
+    "place": "EmergiMentors",
+    "role": "Intern",
+    "location": "Remote",
+    "date": "December 2024 - Present (6 Months)",
+    "description": "Working as a Software Developer Intern, contributing to real-world projects while gaining hands-on experience in full-stack development, API integration, and modern web technologies.",
+    "keyResponsibilities": [
+      "Collaborating with the development team to build and improve web application features.",
+      "Writing clean, maintainable code and assisting in debugging and issue resolution.",
+      "Integrating APIs and optimizing application workflows for better performance.",
+      "Participating in team meetings, sprint planning, and code reviews to ensure high-quality deliverables."
+    ],
+    "technologies": ["JavaScript", "Node.js", "React", "APIs", "Git"],
+    "color": "blue"
+  }
+]

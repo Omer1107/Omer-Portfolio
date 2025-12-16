@@ -1,0 +1,37 @@
+[
+        {
+            "id": 1,
+            
+            "heading": "Bachelor in Computer Science",
+            "institute": "NFC - IET",
+            "Session": "2023 - 2027",
+            "description": "Currently pursuing BS degree in Computer Science, focusing on Data Science, and Machine Learning.",
+            "keyAchievements": [
+                "Current CGPA: 3.80/4.0",
+                "Developed a full-stack Book Notes App that lets users search books via the Google Books API, write personal notes, rate books, and securely store everything in a MySQL database."            ]
+        },
+             {
+            "id": 2,
+            
+            "heading": "FSc",
+            "institute": "Nishat College of Science",
+            "Session": "2019 - 2021",
+            "description": "Completed FSc (Pre-Medical) with strong academic performance, building a solid foundation in analytical thinking, scientific concepts, and disciplined study habits that later supported my transition into computer science and programming.",
+            "keyAchievements": [
+                "Marks: 891/1100",
+                "Pre-Medical Group"
+            ]
+        },
+         {
+            "id": 3,
+            
+            "heading": "Matriculation",
+            "institute": "Zakariya Public School",
+            "Year": "2019",
+            "description": "Successfully completed secondary school education, achieved strong academic performance across all subjects and building a solid foundation for future studies.",
+            "keyAchievements": [
+                "Marks: 1004/1100",
+                "Science Group"
+            ]
+        }
+    ]
